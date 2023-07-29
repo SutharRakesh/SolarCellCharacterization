@@ -121,9 +121,9 @@ def main():
     area_mm2 = st.sidebar.number_input("Enter the active area of solar cell (in mm²):", min_value=1.00, max_value=1000.00, value=6.00, step=0.01)
     input_power_mw_cm2 = st.sidebar.number_input("Enter the input power (in mW/cm²):",  min_value=1.0, max_value=150.0, value=100.0, step=0.1)
     area_cm2 = area_mm2 / 100.0  # Convert area from mm^2 to cm^2
-    st.sidebar.write("Option 1: Paste the data as two columns (Voltage, Current) separated by commas or tabs:")
+    st.sidebar.write("Option 1: Paste the data as two columns (Voltage (Volt) , Current (Amp)) separated by commas or tabs:")
     direct_input = st.sidebar.text_area("Direct Input", value="", height=100)
-    uploaded_file = st.sidebar.file_uploader("Option 2: Upload your .csv file, Provide the full scan data (- to +) V", type=["csv"])
+    uploaded_file = st.sidebar.file_uploader("Option 2: Upload your .csv file, Provide the full scan data (Voltage (Volt) , Current (Amp))", type=["csv"])
 
     data = None  # Initialize the data variable
     if uploaded_file is not None:
@@ -131,7 +131,7 @@ def main():
         data = pd.read_csv(uploaded_file)
         # Automatically assign column names
         data.columns = ['Voltage', 'Current']  # You can change the column names if needed
-        st.write("Data loaded successfully.")
+        st.write("Data loaded successfully. Please use the light theme for better visualization")
     elif direct_input:
         # Convert direct input to a DataFrame
         data = pd.read_csv(StringIO(direct_input), sep='\t|,', engine='python', header=None)
