@@ -32,7 +32,7 @@ st.markdown(
             <a href="www.linkedin.com/in/rakesh-suthar-125b3b136" target="_blank">LinkedIn</a>
             <a href="https://twitter.com/Rakeshsuthar645" target="_blank">Twitter</a>
             <a href="https://www.researchgate.net/profile/Rakesh-Suthar" target="_blank">ResearchGate</a>
-            <a href="https://VoltageLossAnalysis.streamlit.app" target="_blank">EQE and Loss analysis Calculator</a>
+            <a href="https://VoltageLossAnalysis.streamlit.app" target="_blank">EQE-Jsc and Voltage-loss Calculator</a>
         </div>
     </div>
     """,
