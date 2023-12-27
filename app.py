@@ -43,7 +43,7 @@ st.caption(f"App developed by [Rakesh Suthar, IIT Delhi](https://sites.google.co
 
 # Collect user inputs
 st.sidebar.markdown("""
-[Example CSV input file](https://drive.google.com/file/d/1O6B1Drh4r7pVmfX8ZOOhRVMHeGH0_qR4/view?usp=drive_link)
+[Example CSV input  file](https://drive.google.com/file/d/1O6B1Drh4r7pVmfX8ZOOhRVMHeGH0_qR4/view?usp=drive_link)
 """)
 
 # Function to interpolate data
